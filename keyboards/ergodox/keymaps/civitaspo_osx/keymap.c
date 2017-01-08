@@ -13,6 +13,7 @@
 
 // Custom Aliases
 #define G(kc) LGUI(kc)
+#define A(kc) LALT(kc)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
@@ -33,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 ,------|------|------|       |------+------+------.
  *                                 |      |      |      |       |L_MDIA|      |      |
  *                                 | Space|Back  |------|       |------|Back  |Enter |
- *                                 |      |space |      |       |LG+SPC|space |      |
+ *                                 |      |space |AltSPC|       |LG+SPC|space |      |
  *                                 `--------------------'       `--------------------'
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -47,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         G(KC_C),    G(KC_G), _______, KC_LALT, KC_LGUI,
                                                        _______, _______,
                                                                 _______,
-                                               KC_SPC, KC_BSPC, _______,
+                                               KC_SPC, KC_BSPC, A(KC_SPC),
         // right hand
         KC_BSLS, KC_ASTR, KC_RPRN,    KC_PLUS, KC_RBRC, KC_EXLM, KC_HASH,
         KC_AT,   KC_F,    KC_G,       KC_C,    KC_R,    KC_L,    KC_SLSH,
