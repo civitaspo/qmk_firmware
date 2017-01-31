@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |  ESC   |   {  |   [  |   ]  |  (   |   )  |  }   |           |  $   |   %  |   *  |   +  |   !  |   ~  |   \    |
+ * |  ESC   |   {  |   }  |   (  |  )   |   [  |  ]   |           |  $   |   %  |   *  |   +  |   !  |   ~  |   \    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * |  TAB   |   '  |   ,  |   .  |   p  |   y  |  #   |           |  @   |   f  |   g  |   c  |   r  |   l  |   /    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Otherwise, it needs KC_*
 [L_BASE] = KEYMAP(  // layer 0 : default
         // left hand
-        KC_ESC,  KC_LCBR, KC_LBRC, KC_RBRC, KC_LPRN, KC_RPRN, KC_RCBR,
+        KC_ESC,  KC_LCBR, KC_RCBR, KC_LPRN, KC_RPRN, KC_LBRC, KC_RBRC,
         KC_TAB,  KC_QUOT, KC_COMM, KC_DOT,  KC_P,    KC_Y,    KC_HASH,
         KC_LCTL, KC_A,    KC_O,    KC_E,    KC_U,    KC_I,
         KC_LSFT, KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,    KC_GRV,
